@@ -1,0 +1,100 @@
+Testing started at 21:18 ...
+F:\anaconda\python.exe "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.2\plugins\python-ce\helpers\pydev\pydevd.py" --multiproc --qt-support=auto --client 127.0.0.1 --port 17096 --file "C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.2\plugins\python-ce\helpers\pycharm\_jb_pytest_runner.py" --target a2_checker.py::CheckTest
+pydev debugger: process 7112 is connecting
+
+Connected to pydev debugger (build 201.7846.77)
+Launching pytest with arguments a2_checker.py::CheckTest in C:\Users\009\Desktop\em\20211026python
+
+============================= test session starts =============================
+platform win32 -- Python 3.8.8, pytest-6.2.3, py-1.10.0, pluggy-0.13.1 -- F:\anaconda\python.exe
+cachedir: .pytest_cache
+rootdir: C:\Users\009\Desktop\em\20211026python
+plugins: anyio-2.2.0
+collecting ... collected 14 items
+
+a2_checker.py::CheckTest::test_check_constants PASSED                    [  7%]
+Checking that constants refer to their original values
+  check complete
+
+a2_checker.py::CheckTest::test_clean_data PASSED                         [ 14%]
+Checking clean_data...
+  check complete
+
+a2_checker.py::CheckTest::test_extract_column PASSED                     [ 21%]
+Checking extract_column...
+  check complete
+
+a2_checker.py::CheckTest::test_extract_single_ballots PASSED             [ 28%]
+Checking extract_single_ballots...
+  check complete
+
+a2_checker.py::CheckTest::test_get_lowest_not_removed PASSED             [ 35%]
+Checking get_lowest_not_removed...
+  check complete
+
+a2_checker.py::CheckTest::test_get_votes_in_riding PASSED                [ 42%]
+Checking get_votes_in_riding...
+  check complete
+
+a2_checker.py::CheckTest::test_points_to_winner PASSED                   [ 50%]
+Checking points_to_winner...
+  check complete
+
+a2_checker.py::CheckTest::test_remove_party PASSED                       [ 57%]
+Checking remove_party...
+  check complete
+
+a2_checker.py::CheckTest::test_sample_data_2 PASSED                      [ 64%]
+Checking sample_data_2_length...
+  check complete
+
+Checking sample_data_2_first_is_VoteData...
+  check complete
+
+Checking sample_data_2_rank_type...
+  check complete
+
+Checking sample_data_2_range_type...
+  check complete
+
+Checking sample_data_2_approval_type...
+  check complete
+
+a2_checker.py::CheckTest::test_voting_approval PASSED                    [ 71%]
+Checking voting_approval...
+  check complete
+
+a2_checker.py::CheckTest::test_voting_borda PASSED                       [ 78%]
+Checking voting_borda...
+  check complete
+
+a2_checker.py::CheckTest::test_voting_irv PASSED                         [ 85%]
+Checking voting_irv...
+  check complete
+
+a2_checker.py::CheckTest::test_voting_plurality PASSED                   [ 92%]
+Checking voting_plurality...
+  check complete
+
+a2_checker.py::CheckTest::test_voting_range PASSED                       [100%]
+Checking voting_range...
+  check complete
+
+
+============================== warnings summary ===============================
+F:\anaconda\lib\site-packages\pyreadline\py3k_compat.py:8
+  F:\anaconda\lib\site-packages\pyreadline\py3k_compat.py:8: DeprecationWarning: Using or importing the ABCs from 'collections' instead of from 'collections.abc' is deprecated since Python 3.3, and in 3.9 it will stop working
+    return isinstance(x, collections.Callable)
+
+F:\anaconda\lib\site-packages\astroid\node_classes.py:90
+  F:\anaconda\lib\site-packages\astroid\node_classes.py:90: DeprecationWarning: The 'astroid.node_classes' module is deprecated and will be replaced by 'astroid.nodes' in astroid 3.0.0
+    warnings.warn(
+
+F:\anaconda\lib\site-packages\astroid\scoped_nodes.py:26
+  F:\anaconda\lib\site-packages\astroid\scoped_nodes.py:26: DeprecationWarning: The 'astroid.scoped_nodes' module is deprecated and will be replaced by 'astroid.nodes' in astroid 3.0.0
+    warnings.warn(
+
+-- Docs: https://docs.pytest.org/en/stable/warnings.html
+======================= 14 passed, 3 warnings in 44.39s =======================
+
+Process finished with exit code 0
